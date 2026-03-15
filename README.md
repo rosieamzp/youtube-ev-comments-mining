@@ -4,6 +4,29 @@
 
 碩士論文研究專案：以 YouTube 台灣電動車相關影片評論進行文字探勘，結合 BERTopic 主題建模、RoBERTa 情緒分析與負二項迴歸，探討消費者購買電動車的考量因素。
 
+## 專案流程
+
+```mermaid
+flowchart LR
+  subgraph 資料蒐集
+    A[YouTube API] --> B[影片清單]
+    B --> C[原始評論]
+  end
+  subgraph 前處理
+    C --> D[清理評論]
+  end
+  subgraph 分析
+    D --> E[BERTopic 主題]
+    E --> F[RoBERTa 情緒]
+    F --> G[描述統計]
+    G --> H[負二項迴歸]
+  end
+  subgraph 產出
+    H --> I[主題命名]
+    I --> J[圖表]
+  end
+```
+
 ---
 
 ## 專案結構（整理版）
