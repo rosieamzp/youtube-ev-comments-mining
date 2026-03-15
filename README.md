@@ -10,7 +10,7 @@
 
 ```
 EV_analysis_clean/
-├── config.example.py      # 設定範例（複製為 00_config.py，以環境變數或本機填入 API 金鑰）
+├── config.example.py      # 複製成 00_config.py 後，在該檔或環境變數填 YouTube API 金鑰
 ├── 01_search_videos.py    # Step 1：搜尋影片
 ├── 02_collect_comments.py # Step 2：蒐集評論
 ├── 03_clean_comments.py   # Step 3：清理評論
@@ -33,12 +33,10 @@ EV_analysis_clean/
 ## 快速開始
 
 1. **設定**
-   - 複製 `config.example.py` 為 `00_config.py`
-   - 在 `00_config.py` 中填入 YouTube Data API 金鑰，或設定環境變數 `YOUTUBE_API_KEY`
+   - 把 `config.example.py` 複製成 `00_config.py`，在裡面填 YouTube Data API 金鑰，或先設定環境變數 `YOUTUBE_API_KEY` 再執行
 
 2. **環境**
-   - Python 3.x，建議使用虛擬環境
-   - 依序安裝：`pip install -r requirements.txt`（若專案提供）
+   - Python 3.x，建議用虛擬環境。本專案沒有附 requirements.txt，請依各腳本開頭的 import 自行安裝（例如 pandas、requests、bertopic、transformers、statsmodels 等）
 
 3. **執行流程（依序）**
    ```bash
@@ -70,5 +68,5 @@ EV_analysis_clean/
 
 ## 說明
 
-- 專案路徑皆以腳本所在目錄為基準，便於移植與版控。
-- API 金鑰請使用環境變數 `YOUTUBE_API_KEY` 或在本機 `00_config.py` 設定，勿提交至版控。
+- 路徑都依腳本所在目錄來算，換到別台電腦或 clone 到別的位置也能跑。
+- 00_config.py 裡會放 API 金鑰，請只留在本機使用，不要 push 到 GitHub。

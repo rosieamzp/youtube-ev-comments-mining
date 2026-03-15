@@ -1,6 +1,6 @@
 """
-設定檔範例：複製為 00_config.py 後，於本機設定環境變數 YOUTUBE_API_KEY，
-或將下方 API_KEY 改為您的金鑰（勿將 00_config.py 提交至版控）。
+複製成 00_config.py 使用。金鑰可寫在下面 API_KEY，或先設環境變數 YOUTUBE_API_KEY。
+00_config.py 請只留本機，不要 push 到版控。
 """
 import os
 
