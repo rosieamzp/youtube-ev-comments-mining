@@ -1,0 +1,35 @@
+# 虛擬環境
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.egg/
+
+# 機敏與環境
+.env
+*.local
+00_config.py
+00_config.py.py
+
+# 資料與大型輸出（依需要取消註解）
+# data/*.csv
+# output/comments_*.csv
+# models/
+
+# IDE / 編輯器
+.claude/
+.idea/
+.vscode/
+*.swp
+*~
+
+# 系統
+Thumbs.db
+.DS_Store

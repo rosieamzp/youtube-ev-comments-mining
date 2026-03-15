@@ -1,0 +1,3 @@
+# 此資料夾存放輸入資料
+# 請放置：video_list.csv（01 輸出）、comments_raw.csv（02 輸出）、comments_cleaned.csv（03 輸出）
+# 或從上層專案 EV_analysis/data 複製
